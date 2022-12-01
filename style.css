@@ -1,0 +1,116 @@
+body {
+    font-family: 'Inter';
+    background-color:  #ececec;
+        margin: 0px;
+        padding: 0px;
+    overflow-x: hidden;
+}
+
+.my-centered {}
+
+.my-top-bar {
+    display: flex; justify-content: space-between;
+}
+
+.my-search-bar {
+    height: 20px; width: 240px; border-radius: 5px;  border-color: rgb(0, 0, 0, 0); -webkit-box-shadow: 3px 3px 5px -4px rgba(0,0,0,0.4);
+            -moz-box-shadow: 3px 3px 5px -4px rgba(0,0,0,0.4);
+            box-shadow: 3px 3px 5px -4px rgba(0,0,0,0.4);
+    margin-right: 5px;
+}
+
+.my-search-btn {
+    height: 28px; border-radius: 5px;  border-color: rgb(0, 0, 0, 0); background-color: #333333; color: #eeeeee; font-family: 'Inter';
+}
+
+.my-container {
+    margin-top: 20px;
+    width: 80%;
+}
+
+.my-card {
+    background-color: #333333; color: #eeeeee; margin: 20px; padding: 20px; border-radius: 10px; margin-left: 0; margin-right: 0;
+}
+
+.my-card a {
+    color: #eeeeee;
+}
+
+.my-card-inner {
+    display: flex; flex-direction: row;
+}
+.my-card-inner-details {
+    display: flex; flex-direction: column;
+}
+.my-card-side {
+    margin-left: 20px;
+}
+.my-card-side-details {
+    margin-top: 20px;
+}
+.my-card-img {
+    border-radius: 10px;
+    height: 100px;
+}
+
+.my-card-big-img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.my-card-img-banner {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.my-footer {
+    background-color: #333333; color: #eeeeee; width: 100%; padding: 40px; padding-top: 20px; padding-bottom: 30px; margin: 0;
+}
+
+@media (max-width: 600px) {
+    .my-container {
+        width: 100%;
+    }   
+
+    
+
+    .my-card {
+        background-color: #333333; color: #eeeeee; margin: 15px; padding: 15px; border-radius: 7px;
+    }
+
+    .my-card-inner {
+        display: flex; flex-direction: column;
+    }
+    
+    .my-card-side {
+        margin-left: 0px;
+    }
+
+    .my-card-img {
+        border-radius: 5px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    .my-card-big-img {
+        border-radius: 5px;
+        margin-bottom: 15px;
+        width: 100%;
+        height: auto;
+    }
+
+    .my-footer {
+        padding: 10px; padding-top: 10px; padding-bottom: 20px; margin: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .my-centered {
+        display: flex; flex-direction: row; justify-content: center; width: 100%;
+    }
+
+    .my-top-bar {
+        display: flex; flex-direction: column; margin-left: 10px; margin-right: 10px;
+    }
+}

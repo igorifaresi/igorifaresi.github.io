@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Search - Igor Games</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center;">
+      <div class="my-container">
+        <div class="my-top-bar">
+          <div class="my-centered">
+            <h1 style="margin: 0;" onclick="location.href = 'index.html'">Igor Games - Search</h1>
+          </div>
+          <div class="my-centered" style="margin-top: 10px;">
+            <input id="query" type="text" class="my-search-bar">
+            <button onclick="pesquisaJogo()" class="my-search-btn">
+              <b>Search</b>
+            </button>
+          </div>
+        </div>
+
+        <div id="lista-jogos" >
+          <h4>Carregando...</h4>
+        </div>
+      </div>
+    </div>
+    <div class="my-footer">
+      <small>Nome: Igor Fagundes Rezende Silva</small><br>
+      <small>Curso: Ciências da Computação</small><br>
+      <small>Matrícula: 666946</small>
+    </div>
+  </body>
+  <script src="app.js"></script>
+  <script>
+    paginaPesquisa();
+  </script>
+</html>
